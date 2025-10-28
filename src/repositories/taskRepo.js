@@ -10,3 +10,10 @@ export async function create(data) {
     data,
   });
 }
+
+export async function findById(id) {
+  let task = await prisma.task.findFirst({
+    where: { id },
+  });
+  return task;
+}

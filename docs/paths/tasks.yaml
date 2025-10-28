@@ -46,4 +46,3 @@ post:
     '400':
       description: Invalid input
       $ref: ../components/responses/BadRequest.yaml
-      
